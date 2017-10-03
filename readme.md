@@ -1,11 +1,11 @@
 # Barchart
 
-This chart is based [`bl.ock`](https://bl.ocks.org/mbostock/4063269) by
+In this assesment I made a bubble chart with given data. The data I used was the amount of speakers per language. This chart is based [`bl.ock`](https://bl.ocks.org/mbostock/4063269) by
 [**@mbostock**](https://github.com/mbostock) (GPL-3.0).
 
-![afbeelding](http://www.vormplatform.nl/wp-content/uploads/2013/01/strange-fruits-sarah-illenberger-1_o.jpg)
-> Apple by
-> [**vormplatform**](http://www.vormplatform.nl/strange-fruit/).
+![Preview image](preview.png)
+> My work
+> [**Velomovies**](https://velomovies.github.io/fe3-assessment-1/).
 
 ## Background
 
@@ -18,14 +18,13 @@ d3 is using a tsv (tab-separated value) file to make a visualization.
 * `speakers` — And something else
 
 ## Features
-*   [`d3-array`](https://github.com/d3/d3-array#api-reference)
-    — `d3.max`
-    — Array statistics
-*   [`d3-axis`](https://github.com/d3/d3-axis#api-reference)
-    — `d3.axisBottom` and `d3.axisLeft`
-    — Reference marks for scales
+*   [`d3-format`](https://github.com/d3/d3-format#api-reference)
+    — `d3.format([number])`
+*   [`d3-hierarchy`](https://github.com/d3/d3-hierarchy#api-reference)
+    — `d3.hierarchy(data[, children])`
+    — `d3.pack`
 *   [`d3-request`](https://github.com/d3/d3-request#api-reference)
-    — `d3.csv`
+    — `d3.tsv`
     — Loading files
 *   [`d3-scale`](https://github.com/d3/d3-scale#api-reference)
     — `d3.scaleBand` and `d3.scaleLinear`
