@@ -9,13 +9,21 @@ In this assesment I made a bubble chart with given data. The data I used was the
 
 ## Background
 
-I did something in this file
+This asssesment contains a bubble chart. It is based on [`bl.ock`](https://bl.ocks.org/mbostock/4063269). I have changed a few thing in the js to make it my own. First I tried to understand the code. After I did understand it I changed the code a bit to my likings. 
+
+Firstly I added another color scheme which makes the bublles all different. The color schemes could easily be changed with existing themes. 
+
+Secondly I removed unnecessary code. Like making a link in each circle I didn't use, so I removed it.
+
+At last I wanted a more dynamic website. I created a `hover state` on every `.node` so the circle color changes when you hover over. I also added a little transition which starts when opening the page. As you can see the bubbles appear after eachother. I created this by having a transition delay on each `.node`. In js I have a `.style` which adds a transition delay of a few seconds. This delay is calculated by dividing the radius by 100. This creates a certain amount of seconds.
+
+When you hover over every bubble you can see the exact number of people per language. 
 
 ## Data
 
-d3 is using a tsv (tab-separated value) file to make a visualization.
-* `language` — Is something
-* `speakers` — And something else
+d3 is using a tsv (tab-separated value) file to make a visualization. 
+* `language` — language are the different languages in the dataset.
+* `speakers` — Speakers are the amount of people speaking a certain language
 
 ## Features
 *   [`d3-format`](https://github.com/d3/d3-format#api-reference)
