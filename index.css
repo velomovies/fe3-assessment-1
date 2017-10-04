@@ -1,7 +1,43 @@
+/*Basic style*/
+body {
+  background: #000
+}
+
+h1 {
+  font-family: 'Questrial', sans-serif;
+  color: #fff;
+  text-align: center
+}
+
+/*Style and positioning of the svg*/
 svg {
-   width:"960";
-   height:"960";
-   font-family:"sans-serif";
-   font-size:"10";
-   text-anchor:"middle";
+   display: block;
+   margin: auto;
+   font-family: 'Questrial', sans-serif;
+   font-size: .9em;
+   text-anchor: middle
+}
+
+/*Makes the circle white if you hover over the circle*/
+.node:hover circle {
+  fill: #fff !important;
+  cursor: pointer;
+  transition: all .3s
+}
+
+/*Set an animation on the circles when it is loading*/
+svg .node {
+  opacity: 0;
+  animation: FadeIn 1s linear forwards;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
